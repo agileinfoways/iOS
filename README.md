@@ -7,9 +7,9 @@ This demo is developed in Xcode 6.1.
 
 # Features
 
-- Supports refresing of data on tableview (on pull down)
-- Supports lazy laoding of data on tableview (on pull up)
-- Supports auto-sizing
+- Supports refresing of data on tableview 
+- Supports lazy loading of data on tableview 
+- Supports size classes and auto layout
 
 ## [License](https://)
 

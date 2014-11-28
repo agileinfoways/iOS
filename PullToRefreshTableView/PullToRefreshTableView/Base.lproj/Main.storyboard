@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EG7-de-gdM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="RQf-kG-xoN">
+            <objects>
+                <tableViewController id="Mbh-rb-DfA" customClass="TableViewController" customModule="PullToRefreshTableView" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sHv-pX-OET">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="WGn-qh-lwb" customClass="TableViewCustomCell" customModule="PullToRefreshTableView">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WGn-qh-lwb" id="iZB-6N-GeO">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41E-f4-5Nr">
+                                            <rect key="frame" x="119" y="10" width="471" height="82"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="41E-f4-5Nr" secondAttribute="height" multiplier="471:82" id="fov-MM-xWG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="fov-MM-xWG"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7h0-MW-n1o">
+                                            <rect key="frame" x="15" y="10" width="89" height="82"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="89" id="Kzz-2f-LZX"/>
+                                                <constraint firstAttribute="width" secondItem="7h0-MW-n1o" secondAttribute="height" multiplier="89:82" id="scz-Qq-5gC"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="scz-Qq-5gC"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="41E-f4-5Nr" firstAttribute="leading" secondItem="7h0-MW-n1o" secondAttribute="trailing" constant="15" id="17T-lk-Ogj"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7h0-MW-n1o" secondAttribute="bottom" constant="-1" id="2PB-Oc-7vy"/>
+                                        <constraint firstItem="7h0-MW-n1o" firstAttribute="top" secondItem="iZB-6N-GeO" secondAttribute="topMargin" constant="2" id="5xa-Z2-Y3k"/>
+                                        <constraint firstItem="41E-f4-5Nr" firstAttribute="top" secondItem="iZB-6N-GeO" secondAttribute="top" constant="10" id="F6l-Cb-NVV"/>
+                                        <constraint firstAttribute="bottom" secondItem="7h0-MW-n1o" secondAttribute="bottom" constant="9" id="JVl-oH-fjV"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="41E-f4-5Nr" secondAttribute="trailing" constant="2" id="KEB-68-OMP"/>
+                                        <constraint firstItem="7h0-MW-n1o" firstAttribute="leading" secondItem="iZB-6N-GeO" secondAttribute="leading" constant="15" id="Lmi-UZ-9Jv"/>
+                                        <constraint firstItem="41E-f4-5Nr" firstAttribute="top" secondItem="7h0-MW-n1o" secondAttribute="top" id="QzU-DO-1fC"/>
+                                        <constraint firstItem="41E-f4-5Nr" firstAttribute="leading" secondItem="7h0-MW-n1o" secondAttribute="trailing" constant="15" id="XfG-pl-vuT"/>
+                                        <constraint firstItem="7h0-MW-n1o" firstAttribute="top" secondItem="iZB-6N-GeO" secondAttribute="top" constant="9" id="YPz-jo-waC"/>
+                                        <constraint firstAttribute="bottom" secondItem="41E-f4-5Nr" secondAttribute="bottom" constant="8" id="j0o-4V-kSW"/>
+                                        <constraint firstAttribute="trailing" secondItem="41E-f4-5Nr" secondAttribute="trailing" constant="10" id="oDo-gh-cf9"/>
+                                        <constraint firstItem="7h0-MW-n1o" firstAttribute="bottom" secondItem="41E-f4-5Nr" secondAttribute="bottom" id="rHg-dF-KMX"/>
+                                        <constraint firstItem="7h0-MW-n1o" firstAttribute="leading" secondItem="iZB-6N-GeO" secondAttribute="leadingMargin" constant="7" id="vMZ-Ue-vgh"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="JVl-oH-fjV"/>
+                                            <exclude reference="Lmi-UZ-9Jv"/>
+                                            <exclude reference="YPz-jo-waC"/>
+                                            <exclude reference="F6l-Cb-NVV"/>
+                                            <exclude reference="XfG-pl-vuT"/>
+                                            <exclude reference="j0o-4V-kSW"/>
+                                            <exclude reference="oDo-gh-cf9"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="imgImageView" destination="7h0-MW-n1o" id="9pr-kN-58d"/>
+                                    <outlet property="lblText" destination="41E-f4-5Nr" id="k4g-jK-3Pq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mbh-rb-DfA" id="KIX-rC-pus"/>
+                            <outlet property="delegate" destination="Mbh-rb-DfA" id="7Tg-eU-24o"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Ras-6b-A07"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdC-2K-93w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="-167"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mg1-qc-AXE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EG7-de-gdM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W5i-5i-FIO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mbh-rb-DfA" kind="relationship" relationship="rootViewController" id="twZ-ng-emL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLm-ZU-Tes" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="-167"/>
+        </scene>
+    </scenes>
+</document>
